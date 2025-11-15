@@ -1,0 +1,11 @@
+{
+  "name": "The Rising Star of Islam",
+  "short_name": "RisingStar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b5ed7",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "64x64", "type": "image/svg+xml" }
+  ]
+}

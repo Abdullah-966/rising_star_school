@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bldgGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#cfe6ff" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="600" fill="transparent" />
+
+  <!-- ground -->
+  <rect x="0" y="480" width="1200" height="120" fill="#0f172a" opacity="0.08" />
+
+  <!-- main building -->
+  <g transform="translate(150,160)">
+    <rect x="0" y="80" width="700" height="360" rx="12" fill="url(#bldgGrad)" stroke="#c2ddff" stroke-width="2"/>
+    <!-- windows -->
+    <g fill="#dbefff">
+      <rect x="40" y="120" width="80" height="70" rx="6"/>
+      <rect x="160" y="120" width="80" height="70" rx="6"/>
+      <rect x="280" y="120" width="80" height="70" rx="6"/>
+      <rect x="400" y="120" width="80" height="70" rx="6"/>
+      <rect x="520" y="120" width="80" height="70" rx="6"/>
+
+      <rect x="40" y="220" width="80" height="70" rx="6"/>
+      <rect x="160" y="220" width="80" height="70" rx="6"/>
+      <rect x="280" y="220" width="80" height="70" rx="6"/>
+      <rect x="400" y="220" width="80" height="70" rx="6"/>
+      <rect x="520" y="220" width="80" height="70" rx="6"/>
+    </g>
+
+    <!-- entrance -->
+    <rect x="300" y="270" width="150" height="170" rx="8" fill="#ffffff" opacity="0.95"/>
+    <rect x="350" y="320" width="50" height="120" rx="6" fill="#e6f3ff"/>
+
+    <!-- roof -->
+    <path d="M -20 80 L 360 -40 L 740 80 Z" fill="url(#roofGrad)"/>
+    <rect x="-20" y="72" width="760" height="12" fill="#12356a" opacity="0.6"/>
+
+    <!-- flag pole and flag -->
+    <rect x="540" y="-28" width="6" height="60" fill="#12356a"/>
+    <path d="M 546 -20 L 596 -10 L 546 0 Z" fill="#ffdd57"/>
+  </g>
+
+  <!-- smaller building -->
+  <g transform="translate(920,260) scale(0.7)" opacity="0.95">
+    <rect x="0" y="0" width="220" height="160" rx="10" fill="#e8f3ff" stroke="#c2ddff" stroke-width="2"/>
+    <rect x="30" y="30" width="60" height="40" rx="6" fill="#dbefff"/>
+    <rect x="120" y="30" width="60" height="40" rx="6" fill="#dbefff"/>
+    <rect x="30" y="90" width="60" height="40" rx="6" fill="#dbefff"/>
+  </g>
+
+  <!-- decorative circles -->
+  <g opacity="0.5">
+    <circle cx="1000" cy="80" r="40" fill="#93c5fd"/>
+    <circle cx="80" cy="100" r="30" fill="#bfdbfe"/>
+  </g>
+</svg>
